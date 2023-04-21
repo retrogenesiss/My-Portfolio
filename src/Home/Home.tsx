@@ -1,21 +1,17 @@
-import s from './Main.module.css'
-import styleContainer from './../Common/Styles/Container.module.css'
+import s from './Home.module.css'
 
-function Main() {
+function Home() {
     return (
         <div className={s.mainBlock}>
-            <div className={styleContainer.container}>
+            <div className={s.container}>
                 <div className={s.text}>
-                    <span>Hello there, general Kenobi</span>
-                    <h1>My name is Arthur</h1>
-                    <p>I`m a frontend developer</p>
-                </div>
-                <div className={s.photo}>
-
+                    <span>Привет!</span>
+                    <h1>Меня зовут Артур</h1>
+                    <span className={s.subtitle}>И я frontend-разработчик</span>
                 </div>
             </div>
         </div>
     )
 }
 
-export default Main;
+export default Home;

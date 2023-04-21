@@ -1,0 +1,15 @@
+.skillsBlock {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+
+    flex-wrap: wrap;
+    border: 1px solid #00b5ff;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+}
+
+

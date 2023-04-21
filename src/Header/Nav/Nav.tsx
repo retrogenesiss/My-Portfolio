@@ -1,11 +1,14 @@
-import s from 'src/Nav/Nav.module.css'
+import s from './Nav.module.css'
 
 function Nav() {
-return (
-    <div className={s.nav}>
-
-    </div>
-)
+    return (
+        <ul className={s.nav}>
+            <li className={s.navItem}>Home</li>
+            <li className={s.navItem}>Skills</li>
+            <li className={s.navItem}>Projects</li>
+            <li className={s.navItem}>Contacts</li>
+        </ul>
+    )
 }
 
 export default Nav;

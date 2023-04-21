@@ -1,27 +1,25 @@
-import s from './Skills.module.css'
-import styleContainer from './../Common/Styles/Container.module.css'
-import Skill from "./Skill/Skill";
+import s from './Projects.module.css'
+import Project from "./Project/Project";
+import style from './../Common/Styles/Container.module.css'
 
-function Skills() {
+function Projects() {
     return (
-        <div className={s.skillsBlock}>
-            <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <h2 className={s.title}>Skills</h2>
-                <div className={s.skills}>
-                    <Skill title={'JS'}
-                           description={'Съешь ещё этих мягких французских булок, да выпей чаю...'}
+        <div className={s.projectsBlock}>
+            <div className={s.container}>
+                <h2 className={s.title}>Мои проекты</h2>
+                <p className={s.text}>Интеррактивные примеры моих работ:</p>
+                <hr/>
+                <div className={style.common}>
+                    <Project title={'Project name'}
+                             description={'Здесь находится описание проектаЗдесь находится описание проектаЗдесь находится описание проектаЗдесь находится описание проекта'}
                     />
-                    <Skill title={'CSS'}
-                           description={'Съешь ещё этих мягких французских булок, да выпей чаю...'}
-                    />
-                    <Skill title={'React'}
-                           description={'Съешь ещё этих мягких французских булок, да выпей чаю...Съешь ещё этих мягких французских булок, да выпей чаю'}
+                    <Project title={'Another project'}
+                             description={'Здесь находится описание проекта'}
                     />
                 </div>
             </div>
-
         </div>
     )
 }
 
-export default Skills;
+export default Projects;

@@ -1,0 +1,44 @@
+.footerBlock {
+    background-color: #07142c;
+}
+
+.container {
+   flex-wrap: wrap;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.name {
+    text-align: center;
+    color: #00b5ff;
+    font-size: 30px;
+}
+
+.iconContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 30px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.icon {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #00b5ff;
+    transform: rotate(45deg);
+}
+
+.footerPolicy {
+    color: white;
+    text-align: center;
+}

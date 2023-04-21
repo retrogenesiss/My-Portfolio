@@ -1,18 +1,20 @@
-import s from './Skill.module.css'
+import s from './Project.module.css'
+import style from './../../Common/Styles/Container.module.css'
 
-type SkillsType = {
+type ProjectsType = {
     title: string
     description: string
 }
 
-function Skill(props: SkillsType) {
+function Project(props: ProjectsType) {
     return (
-        <div className={s.skill}>
-            <div className={s.icon}></div>
-            <h3>{props.title}</h3>
-            <span className={s.description}>{props.description}</span>
+        <div className={`${s.box} ${style.box}`}>
+            <div className={s.image}></div>
+            <h3 className={style.title}>{props.title}</h3>
+            <hr/>
+            <span className={style.description}>{props.description}</span>
         </div>
     )
 }
 
-export default Skill;
+export default Project;
