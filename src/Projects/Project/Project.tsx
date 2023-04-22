@@ -9,12 +9,16 @@ type ProjectsType = {
 function Project(props: ProjectsType) {
     return (
         <div className={`${s.box} ${style.box}`}>
+            <div className={s.imgContainer}>
             <div className={s.image}></div>
+            </div>
             <h3 className={style.title}>{props.title}</h3>
             <hr/>
-            <span className={style.description}>{props.description}</span>
+            <span className={s.description}>{props.description}</span>
         </div>
     )
 }
 
 export default Project;
+
+// {`${s.box} ${style.box}`}

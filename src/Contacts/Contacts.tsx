@@ -6,7 +6,7 @@ import SuperButton from "../Common/SuperButton/SuperButton";
 
 const Contacts = () => {
     return (
-        <div className={s.contactsBlock}>
+        <div className={style.commonBlock}>
             <h2>Мои контакты</h2>
             <p>Вы можете связаться со мной любым удобным Вам способом:</p>
             <hr/>

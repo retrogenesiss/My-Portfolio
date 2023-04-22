@@ -1,5 +1,6 @@
 .box {
-    width: 300px;
+    max-width: 300px;
+    min-width: 250px;
     background-color: #08172f;
     border: 2px solid #00b5ff;
     border-radius: 10px;
@@ -13,12 +14,10 @@
     box-shadow: 1px 0 10px 1px #00b5ff;
 }
 
-.common {
+.commonContainer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-
-
     flex-wrap: wrap;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -26,13 +25,23 @@
     row-gap: 30px;
 }
 
+.commonBlock {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #00b5ff;
+    background-color: #0B2447;
+}
+
 .title {
     color: #00b5ff;
 }
 
 .description {
+    width: 250px;
     color: #00b5ff;
     text-align: left;
+    box-sizing: border-box;
 }
 
 h2 {

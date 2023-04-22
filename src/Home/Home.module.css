@@ -2,6 +2,8 @@
     height: 300px;
     background: url('./../../media/123.jpg') center 50%/cover no-repeat;
 
+    padding-top: 50px;
+    padding-bottom: 50px
 }
 
 .container {

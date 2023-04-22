@@ -1,16 +1,13 @@
-import s from './Skills.module.css'
 import Skill from "./Skill/Skill";
 import style from './../Common/Styles/Container.module.css'
 
 function Skills() {
     return (
-        <div className={s.skillsBlock}>
-            <div className={s.container}>
-                <h2 className={s.title}>Навыки</h2>
-                <p className={s.text}>Или чем я пользуюсь в работе:</p>
+        <div className={style.commonBlock}>
+                <h2>Навыки</h2>
+                <p>Или чем я пользуюсь в работе:</p>
                 <hr/>
-                <div className={style.common}>
-
+                <div className={style.commonContainer}>
                     <Skill title={'HTML'}
                            description={'Съешь ещё этих мягких французских булок, да выпей чаю...'}
                            />
@@ -24,7 +21,6 @@ function Skills() {
                            description={'Съешь ещё этих мягких французских булок, да выпей чаю...Съешь ещё этих мягких французских булок, да выпей чаю'}
                     />
                 </div>
-            </div>
         </div>
     )
 }
